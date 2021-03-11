@@ -1,0 +1,98 @@
+/*contenitore*/
+ .container {
+    width: 30rem; /*largezza*/
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+
+  /*pagina*/
+
+  html {
+    font-size: 72%; /*dimensione font*/
+  }
+
+
+  /*corpo*/
+  body {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+  }
+
+
+  /*intestazione e barra nav*/
+
+  header,
+  footer {
+    background-color:skyblue;
+    height: 5rem;
+    display: flex;
+    justify-content: center;/*testo centrato*/
+    align-items: center; /*allineamento centrato*/
+  }
+
+
+  /*contenuto per i vari utenti*/
+  .content .utente {
+    height: 9rem;
+    border-top: 1px solid #dda; /*colore bordo singolo content*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  /*immagini*/
+  .icona img {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+  }
+
+  /*testo*/
+  .utente .text {
+    margin-right: auto;
+    padding-left: 1rem;
+  }
+
+  .utente .nome {
+    font-size: 2rem;
+    color: black;
+  }
+
+  .utente .professione {
+    font-size: 1.2rem;
+    color: gray;
+    text-align: center;
+  }
+
+
+  /*i  footer*/
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 15rem;
+  }
+
+  footer li {
+    list-style-type: none;
+    padding: 1rem;
+  }
+
+  footer a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--black-color);
+    font-weight: 500;
+    opacity: 0.3;
+  }
+  /*passaggio del mouse si colora-dichiaro che PROFILE e' attivo*/
+  footer a:hover,
+  .active {
+    opacity: 3;
+  }
+  
